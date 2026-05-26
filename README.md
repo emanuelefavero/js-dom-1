@@ -2,6 +2,10 @@
 
 Esercizio introduttivo sulla manipolazione del DOM in JavaScript dal mio corso Web Dev.
 
+## Demo
+
+<img src="assets/demo/demo.gif" alt="Demo app" width="260">
+
 ## Come eseguire il progetto
 
 Aprire `index.html` nel browser.
@@ -27,3 +31,12 @@ La logica dell'esercizio si trova in `assets/js/script.js`.
 - Ho gestito lo stato della lampadina con una variabile booleana `isOn`.
 - Ho separato la logica in tre funzioni: `turnOn`, `turnOff` e `toggleLamp`, per mantenere il codice leggibile.
 - Ho aggiornato anche l'attributo `alt` dell'immagine quando cambia lo stato della lampadina.
+
+
+&nbsp;
+
+---
+
+&nbsp;
+
+[**Go To Top &nbsp; ⬆️**](#js-dom-1)
