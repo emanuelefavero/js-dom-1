@@ -7,20 +7,24 @@ const OFF_IMAGE = 'assets/img/white_lamp.png';
 
 let on = false;
 
+const turnOn = () => {
+  lamp.src = ON_IMAGE;
+  lamp.alt = 'Lampadina accesa';
+  button.textContent = 'Spegni';
+  body.classList.add('light-on');
+};
+
+const turnOff = () => {
+  lamp.src = OFF_IMAGE;
+  lamp.alt = 'Lampadina spenta';
+  button.textContent = 'Accendi';
+  body.classList.remove('light-on');
+};
+
 const toggleLamp = () => {
   on = !on;
-
-  if (on) {
-    lamp.src = ON_IMAGE;
-    lamp.alt = 'Lampadina accesa';
-    button.textContent = 'Spegni';
-    body.classList.add('light-on');
-  } else {
-    lamp.src = OFF_IMAGE;
-    lamp.alt = 'Lampadina spenta';
-    button.textContent = 'Accendi';
-    body.classList.remove('light-on');
-  }
+  if (on) turnOn();
+  else turnOff();
 };
 
 button.addEventListener('click', toggleLamp);
