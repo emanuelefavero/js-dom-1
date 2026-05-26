@@ -11,14 +11,14 @@ const turnOn = () => {
   lamp.src = ON_IMAGE;
   lamp.alt = 'Lampadina accesa';
   button.textContent = 'Spegni';
-  body.classList.add('light-isOn');
+  body.classList.add('light-on');
 };
 
 const turnOff = () => {
   lamp.src = OFF_IMAGE;
   lamp.alt = 'Lampadina spenta';
   button.textContent = 'Accendi';
-  body.classList.remove('light-isOn');
+  body.classList.remove('light-on');
 };
 
 const toggleLamp = () => {
