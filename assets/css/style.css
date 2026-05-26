@@ -26,7 +26,7 @@ body {
   transition: background-color 0.3s ease;
 
   &.light-on {
-    background-color: oklch(17.133% 0.00649 55.818);
+    background-color: oklch(17.13% 0.006 55.8);
   }
 }
 
@@ -48,7 +48,7 @@ body {
 }
 
 .btn {
-  background-color: oklch(97% 0.001 106.424);
+  background-color: oklch(97% 0.001 106.42);
   color: black;
   padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
