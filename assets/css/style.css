@@ -9,6 +9,11 @@ body {
   min-height: 100vh;
   background-color: oklch(14.7% 0.004 49.25);
   color: white;
+  transition: background-color 0.3s ease;
+
+  &.light-on {
+    background-color: oklch(17.133% 0.00649 55.818);
+  }
 }
 
 button {
@@ -33,6 +38,11 @@ button {
   gap: 0.5rem;
 }
 
+.lamp {
+  width: 270px;
+  max-width: 80vw;
+}
+
 .btn {
   background-color: oklch(97% 0.001 106.424);
   color: black;
@@ -40,7 +50,12 @@ button {
   font-size: 1.5rem;
   font-weight: 600;
   border-radius: 0.75rem;
-  transition: all 0.3s ease;
+  user-select: none;
+  min-width: 9ch;
+  text-align: center;
+  transition:
+    background-color 0.3s ease,
+    translate 0.1s ease;
 
   &:hover {
     background-color: oklch(92.3% 0.003 48.717);
@@ -48,5 +63,18 @@ button {
 
   &:active {
     translate: 0 2px;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: default;
+
+    &:hover {
+      background-color: oklch(97% 0.001 106.424);
+    }
+
+    &:active {
+      translate: 0;
+    }
   }
 }
