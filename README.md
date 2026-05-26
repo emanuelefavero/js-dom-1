@@ -32,7 +32,6 @@ La logica dell'esercizio si trova in `assets/js/script.js`.
 - Ho separato la logica in tre funzioni: `turnOn`, `turnOff` e `toggleLamp`, per mantenere il codice leggibile.
 - Ho aggiornato anche l'attributo `alt` dell'immagine quando cambia lo stato della lampadina.
 
-
 &nbsp;
 
 ---
