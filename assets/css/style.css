@@ -64,17 +64,4 @@ button {
   &:active {
     translate: 0 2px;
   }
-
-  &[disabled] {
-    opacity: 0.5;
-    cursor: default;
-
-    &:hover {
-      background-color: oklch(97% 0.001 106.424);
-    }
-
-    &:active {
-      translate: 0;
-    }
-  }
 }
