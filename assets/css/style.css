@@ -3,3 +3,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  background-color: oklch(14.7% 0.004 49.25);
+  color: white;
+}
+
+button {
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn {
+  background-color: oklch(97% 0.001 106.424);
+  color: black;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: oklch(92.3% 0.003 48.717);
+  }
+
+  &:active {
+    translate: 0 2px;
+  }
+}
