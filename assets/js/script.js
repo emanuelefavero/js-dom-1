@@ -11,6 +11,7 @@ const turnOn = () => {
   lamp.src = ON_IMAGE;
   lamp.alt = 'Lampadina accesa';
   button.textContent = 'Spegni';
+  button.classList.add('light-on');
   body.classList.add('light-on');
 };
 
@@ -18,6 +19,7 @@ const turnOff = () => {
   lamp.src = OFF_IMAGE;
   lamp.alt = 'Lampadina spenta';
   button.textContent = 'Accendi';
+  button.classList.remove('light-on');
   body.classList.remove('light-on');
 };
 

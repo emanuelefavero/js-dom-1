@@ -68,4 +68,10 @@ body {
   &:active {
     translate: 0 2px;
   }
+
+  &.light-on {
+    --bg-on: oklch(97.2% 0.07 103);
+    background-color: var(--bg-on);
+    background-image: radial-gradient(circle, white 0%, var(--bg-on) 100%);
+  }
 }
